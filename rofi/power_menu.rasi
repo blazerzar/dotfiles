@@ -1,0 +1,43 @@
+configuration {
+    font:            "Source Code Pro Regular 14";
+    scroll-method:   0;
+    disable-history: false;
+    sidebar-mode:    false;
+}
+
+* {
+    background: #1F2126;
+    foreground: #C5C8C6;
+    primary:    #EBE45C;
+}
+
+window {
+    background-color: @background;
+    border:           1;
+    border-color:     @primary;
+    padding:          10;
+    transparency:     "real";
+    width:            275px;
+    location:         0;
+}
+
+/* List of elements */
+listview {
+    background-color: @background;
+    lines:     7;
+    columns:   1;
+    scrollbar: false;
+}
+
+/* Elements */
+element-text {
+    background-color: @background;
+    text-color:       @foreground;
+    horizontal-align: 0.5;
+    padding: 2;
+}
+
+/* Only show list, no search bar */
+mainbox {
+    children: [listview];
+}

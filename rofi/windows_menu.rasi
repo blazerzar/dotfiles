@@ -1,0 +1,9 @@
+@import "~/.config/rofi/dmenu.rasi"
+
+window {
+    width: 800px;
+}
+
+listview {
+    lines: 8;
+}

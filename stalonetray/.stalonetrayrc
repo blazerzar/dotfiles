@@ -1,0 +1,24 @@
+background "#1F2126"
+decorations none
+geometry 1x1+1848+32
+
+grow_gravity NW
+icon_gravity NW
+icon_size 18
+slot_size 24
+
+log_level err
+kludges fix_window_pos
+max_geometry 0x0
+
+skip_taskbar true
+sticky true
+
+transparent false
+vertical false
+
+window_layer normal
+window_strut auto
+window_type normal
+
+xsync false

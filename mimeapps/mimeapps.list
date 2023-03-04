@@ -1,0 +1,19 @@
+[Default Applications]
+application/json=google-chrome.desktop
+application/pdf=google-chrome.desktop
+application/x-xpinstall=google-chrome.desktop
+application/xhtml+xml=google-chrome.desktop
+text/html=google-chrome.desktop
+text/xml=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+
+[Added Associations]
+application/json=google-chrome.desktop
+application/pdf=google-chrome.desktop
+application/x-xpinstall=google-chrome.desktop
+application/xhtml+xml=google-chrome.desktop
+text/html=google-chrome.desktop
+text/xml=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop

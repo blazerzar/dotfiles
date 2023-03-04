@@ -1,0 +1,61 @@
+configuration {
+    font:            "Source Code Pro Regular 14";
+    scroll-method:   0;
+    disable-history: false;
+    sidebar-mode:    false;
+}
+
+* {
+    background:     #1F2126;
+    background-alt: #373B41;
+    foreground:     #C5C8C6;
+    primary:        #EBE45C;
+}
+
+window {
+    background-color: @background;
+    border:           1;
+    border-color:     @primary;
+    padding:          10;
+    transparency:     "real";
+    width:            200px;
+    location:         0;
+}
+
+/* List of elements */
+listview {
+    background-color: @background;
+    lines:     3;
+    columns:   1;
+    scrollbar: false;
+}
+
+/* Elements */
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+    horizontal-align: 0.5;
+    padding: 2;
+}
+
+/* Not selected elements*/
+element.normal.normal {
+    background-color: @background;
+    text-color: @foreground;
+}
+element.alternate.normal {
+    background-color: @background;
+    text-color: @foreground;
+}
+
+/* Selected element */
+element.selected.normal {
+    background-color: @background-alt;
+    text-color: @foreground;
+}
+
+
+/* Only show list, no search bar */
+mainbox {
+    children: [listview];
+}

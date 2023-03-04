@@ -1,0 +1,100 @@
+configuration {
+    font:                "Source Code Pro Regular 12";
+    show-icons:          false;
+    icon-theme:          "Qogir";
+    drun-display-format: "{name}";
+    scroll-method:       0;
+    disable-history:     false;
+    sidebar-mode:        false;
+}
+
+* {
+    background:     #1F2126;
+    background-alt: #373B41;
+    foreground:     #C5C8C6;
+    primary:        #EBE45C;
+}
+
+/* Window settings */
+window {
+    background-color: @background;
+    border:           1;
+    border-color:     @primary;
+    width:            400px;
+    padding:          30;
+}
+listview {
+    lines:   10;
+    columns: 1;
+}
+mainbox {
+    border:  0;
+    padding: 0;
+}
+
+/* Apps list */
+listview {
+    fixed-height: 0;
+    border:       2px 0px 0px;
+    border-color: @foreground;
+    spacing:      5px;
+    scrollbar:    false;
+    padding:      10px 0px 0px;
+}
+element {
+    border:  0;
+    padding: 2px 5px 2px;
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+/* Elements */
+element.normal.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+element.normal.urgent {
+    background-color: @background;
+    text-color:       @foreground;
+}
+element.normal.active {
+    background-color: @background;
+    text-color:       @foreground;
+}
+
+element.selected.normal {
+    background-color: @background-alt;
+    text-color:       @foreground;
+}
+element.selected.urgent {
+    background-color: @background;
+    text-color:       @foreground;
+}
+element.selected.active {
+    background-color: @background;
+    text-color:       @foreground;
+}
+
+element.alternate.normal {
+    background-color: @background;
+    text-color:       @foreground;
+}
+element.alternate.urgent {
+    background-color: @background;
+    text-color:       @foreground;
+}
+element.alternate.active {
+    background-color: @background;
+    text-color:       @foreground;
+}
+
+/* Remoev "Type to filter" text */
+entry {
+    placeholder: "";
+}
+
+inputbar {
+    children:   [ entry, case-indicator ];
+}
