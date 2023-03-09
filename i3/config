@@ -87,10 +87,10 @@ bindsym $mod+e exec /usr/bin/thunar
 bindsym Print exec --no-startup-id flameshot gui
 
 # Toggle sound device
-bindsym $mod+p exec bash ~/.config/i3/user_scripts/toggle_sound_device.sh
+bindsym $mod+p exec --no-startup-id bash ~/.config/i3/user_scripts/toggle_sound_device.sh
 
 # Power profile menu
-bindsym $mod+Shift+p exec bash ~/.config/i3/user_scripts/power_profile.sh
+bindsym $mod+Shift+p exec --no-startup-id bash ~/.config/i3/user_scripts/power_profile.sh
 
 # Power menu
 bindsym $mod+Shift+e exec --no-startup-id bash ~/.config/i3/user_scripts/power_menu.sh
