@@ -1,8 +1,16 @@
 #!/usr/bin/bash
 
-SINK=alsa_output.pci-0000_00_1f.3.3.analog-stereo
 SPEAKERS=analog-output-lineout
 HEADPHONES=analog-output-headphones
+
+# Get active sink
+sink=$(
+    pactl list sinks |
+    pcregrep -M "State: RUNNING\n\tName: .*" |
+    tail -n 1 |
+    sed "s/Name: //" |
+    xargs
+)
 
 # Get current active device
 active_device=$(
@@ -14,9 +22,9 @@ active_device=$(
 
 # Toggle device (port)
 if [[ "$active_device" == "$SPEAKERS" ]]; then
-    pactl set-sink-port $SINK $HEADPHONES
+    pactl set-sink-port $sink $HEADPHONES
 else
-    pactl set-sink-port $SINK $SPEAKERS
+    pactl set-sink-port $sink $SPEAKERS
 fi
 
 exit 0
