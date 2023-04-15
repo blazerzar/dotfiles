@@ -1,4 +1,3 @@
-export TERMINAL=xfce4-terminal
+export TERMINAL=kitty
 export BROWSER=google-chrome-stable
 export EDITOR=vim
-

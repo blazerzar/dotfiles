@@ -36,3 +36,6 @@ cp ~/.ssh/config ssh/.
 
 # Simple vim config for indentations
 cp ~/.vimrc vim/.
+
+# kitty
+cp ~/.config/kitty/. kitty -rf

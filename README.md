@@ -31,7 +31,7 @@ Also check `Package cleanup configuration` and
 ```bash
 sudo pacman -S vim gnome-keyring nvidia-settings bluez bluez-utils blueman \
     nitrogen ttf-fira-code noto-fonts-emoji flameshot gparted polybar \
-    ttf-font-awesome stalonetray zsh
+    ttf-font-awesome stalonetray zsh kitty
 yay -S visual-studio-code-bin gwe snapd google-chrome discord picom \
     ttf-material-icons-git
 sudo snap install spotify
