@@ -58,7 +58,7 @@ launcher=(${launcher_exe} "${launcher_options[@]}")
 selection=$?
 
 # Check if shortcut was pressed
-if [[ $selection -ge 10 ]] && [[ $selection -le 15 ]]; then
+if [[ $selection -ge 10 ]] && [[ $selection -le 16 ]]; then
     i3-msg -q "exec --no-startup-id sleep 0.5 && ${commands[$selection]}"
 fi
 

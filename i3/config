@@ -81,7 +81,7 @@ workspace_auto_back_and_forth yes
 bindsym $mod+Shift+q kill
 
 # Application
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec $TERMINAL
 bindsym $mod+w exec /usr/bin/google-chrome-stable
 bindsym $mod+e exec /usr/bin/thunar
 bindsym Print exec --no-startup-id flameshot gui
@@ -190,12 +190,12 @@ workspace $ws10 output DP-0
 
 # Bind program to workspace
 # assign [class="Xfce4-terminal"] $ws1
-assign [class="Google-chrome"] $ws2
+# assign [class="Google-chrome"] $ws2
 for_window [class="Spotify"] move to workspace $ws3
 assign [class="discord"] $ws4
 
 # Focus window when it opens
-for_window [class="Xfce4-terminal"] focus
+# for_window [class="Xfce4-terminal"] focus
 for_window [class="Google-chrome"] focus
 for_window [class="Spotify"] focus
 for_window [class="discord"] focus
@@ -237,8 +237,9 @@ exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 
 # Autostart apps as you like
 # exec --no-startup-id sleep 2 && xfce4-terminal
-exec --no-startup-id sleep 2 && google-chrome-stable
-exec --no-startup-id sleep 4 && spotify
+exec --no-startup-id sleep 2 && i3-msg workspace "2:" 
+exec --no-startup-id sleep 4 && google-chrome-stable
+exec --no-startup-id sleep 5 && spotify
 exec --no-startup-id sleep 6 && discord
 
 ###############
@@ -315,3 +316,4 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Turn off screen shortcut
 bindsym $mod+Shift+b exec --no-startup-id sleep 1 && xset -display :0.0 dpms force off
+
