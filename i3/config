@@ -306,7 +306,7 @@ bindsym $mod+t exec rofi -show window -monitor -1 -config ~/.config/rofi/windows
 #########
 
 # Keyboard layout switch (Win key + space)
-exec_always --no-startup-id setxkbmap -layout 'us,si' -option 'grp:win_space_toggle'
+# exec_always --no-startup-id setxkbmap -layout 'us,si' -option 'grp:win_space_toggle'
 
 # Slow scroll fix
 # exec --no-startup-id imwheel -b "45"

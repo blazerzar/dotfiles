@@ -39,3 +39,6 @@ cp ~/.vimrc vim/.
 
 # kitty
 cp ~/.config/kitty/. kitty -rf
+
+# Keyboard layout change
+cp /etc/X11/xorg.conf.d/00-keyboard.conf keyboard/.
