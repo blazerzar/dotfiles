@@ -191,7 +191,8 @@ workspace $ws10 output DP-0
 # Bind program to workspace
 # assign [class="Xfce4-terminal"] $ws1
 # assign [class="Google-chrome"] $ws2
-for_window [class="Spotify"] move to workspace $ws3
+# for_window [class="Spotify"] move to workspace $ws3
+assign [class="Spotify"] $ws3
 assign [class="discord"] $ws4
 
 # Focus window when it opens
@@ -239,7 +240,7 @@ exec --no-startup-id dbus-launch dunst --config ~/.config/dunst/dunstrc
 # exec --no-startup-id sleep 2 && xfce4-terminal
 exec --no-startup-id sleep 2 && i3-msg workspace "2:" 
 exec --no-startup-id sleep 4 && google-chrome-stable
-exec --no-startup-id sleep 5 && spotify
+exec --no-startup-id sleep 5 && spotify-launcher
 exec --no-startup-id sleep 6 && discord
 
 ###############

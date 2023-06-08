@@ -31,10 +31,9 @@ Also check `Package cleanup configuration` and
 ```bash
 sudo pacman -S vim gnome-keyring nvidia-settings bluez bluez-utils blueman \
     nitrogen ttf-fira-code noto-fonts-emoji flameshot gparted polybar \
-    ttf-font-awesome stalonetray zsh kitty
+    ttf-font-awesome stalonetray zsh kitty spotify-launcher
 yay -S visual-studio-code-bin gwe snapd google-chrome discord picom \
     ttf-material-icons-git
-sudo snap install spotify
 ```
 
 ### Grub
@@ -91,6 +90,14 @@ Drivers are installed using `nvidia-inst` (if not installed).
 
 GPU information can be seen using `nvidia-smi`, `inxi -Gx` or in
 GreenWithEnvy app.
+
+There might be some problems with HW acceleration. VA-API is not supported
+on NVIDIA driver, but can be enabled using `nvidia-vaapi-driver`, adding
+the kernel parameter `nvidia-drm.modeset=1` and updating GRUB config file.
+If NVIDIA drivers are still not fixed, variable `NVD_BACKEND` needs to be
+set to `direct` to use the direct backend. More info can be found on
+the Arch Wiki page. I thought this would fix Discord crashes after
+resume, but they still persist.
 
 ```bash
 yay -S gwe
