@@ -28,7 +28,7 @@ commands[10]="systemctl poweroff";                  options+=( " Shutdown (Sh
 commands[11]="systemctl reboot";                    options+=( " Reboot (R)" )
 commands[12]="$LOCK_CMD && systemctl suspend";      options+=( " Suspend (S)" )
 commands[13]="systemctl hibernate";                 options+=( " Hibernate (H)" )
-commands[14]="xset -display :0.0 dpms force off ";  options+=( " Monitor off (M)" )
+commands[14]="xset -display :0.0 dpms force off ";  options+=( "  Monitor off (M)" )
 commands[15]="$LOCK_CMD";                           options+=( " Lock (L)" )
 commands[16]="i3-msg exit";                         options+=( " Logout (Shift+L)" )
 
