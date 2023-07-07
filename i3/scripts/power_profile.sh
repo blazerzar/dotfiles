@@ -40,8 +40,8 @@ LOCK_CMD="~/.config/i3/scripts/blur-lock"
 
 # Menu with keys/commands
 commands[" Performance"]="powerprofilesctl set performance";   options+=( " Performance" )
-commands[" Balanced"]="powerprofilesctl set balanced";         options+=( " Balanced" )
-commands[" Power Saver"]="powerprofilesctl set power-saver";   options+=( " Power Saver" )
+commands["  Balanced"]="powerprofilesctl set balanced";         options+=( "  Balanced" )
+commands["  Power Saver"]="powerprofilesctl set power-saver";   options+=( "  Power Saver" )
 
 menu_nrows=${#menu[@]}
 
