@@ -173,15 +173,15 @@ Nitrogen needs to be started in i3 config.
 exec --no-startup-id sleep 2 && nitrogen --restore
 ```
 
-### Snap
+### Dark mode
 
-It needs to be installed from AUR and its services need to be enabled.
+It can be turned on for GTK by adding
 
 ```bash
-yay -S snapd
-sudo systemctl enable --now snapd.socket
-sudo systemctl enable --now snapd.apparmor
+gtk-application-prefer-dark-theme=1
 ```
+
+to `settings.ini` in `~/.config/gtk-3.0` and `~/.config/gtk-4.0`.
 
 ### Mouse acceleration
 
